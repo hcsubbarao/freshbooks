@@ -1,0 +1,44 @@
+= About
+
+FreshBooks.rb is a Ruby interface to the FreshBooks API. It exposes easy-to-use classes and methods for interacting with your FreshBooks account.
+
+NOTE: These examples are out of date and need to be updated. I will be writing documentation for all the updates soon and will be pushing the changes to rubyforge in the near future.
+
+= Examples
+
+Initialization:
+
+  FreshBooks::Base.establish_connection('sample.freshbooks.com', 'mytoken')
+
+Updating a client name:
+
+  clients = FreshBooks::Client.list
+  client = clients[0]
+  client.first_name = 'Suzy'
+  client.update
+
+Updating an invoice:
+
+  invoice = FreshBooks::Invoice.get(4)
+  invoice.lines[0].quantity += 1
+  invoice.update
+
+Creating a new item
+
+  item = FreshBooks::Item.new
+  item.name = 'A sample item'
+  item.create
+
+= License
+
+This work is distributed under the MIT License. Use/modify the code however you like.
+
+= Download
+
+gem sources -a http://gems.github.com
+sudo gem install bcurren-freshbooks.rb
+
+= Credits
+
+FreshBooks.rb is written and maintained by Ben Curren at Outright.com. Ben Vinegar was the original developer and we have taken over maintenance of the gem from now on.
+

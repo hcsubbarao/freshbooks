@@ -1,0 +1,148 @@
+--- !ruby/object:Gem::Specification 
+name: freshbooks.rb
+version: !ruby/object:Gem::Version 
+  version: 3.0.18
+platform: ruby
+authors: 
+- Ben Curren
+autorequire: 
+bindir: bin
+cert_chain: []
+
+date: 2009-11-02 00:00:00 -05:00
+default_executable: 
+dependencies: 
+- !ruby/object:Gem::Dependency 
+  name: activesupport
+  type: :runtime
+  version_requirement: 
+  version_requirements: !ruby/object:Gem::Requirement 
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        version: "0"
+    version: 
+- !ruby/object:Gem::Dependency 
+  name: newgem
+  type: :development
+  version_requirement: 
+  version_requirements: !ruby/object:Gem::Requirement 
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        version: 1.5.2
+    version: 
+- !ruby/object:Gem::Dependency 
+  name: mocha
+  type: :development
+  version_requirement: 
+  version_requirements: !ruby/object:Gem::Requirement 
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        version: 0.9.4
+    version: 
+- !ruby/object:Gem::Dependency 
+  name: hoe
+  type: :development
+  version_requirement: 
+  version_requirements: !ruby/object:Gem::Requirement 
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        version: 2.3.3
+    version: 
+description: ""
+email: 
+- ben@outright.com
+executables: []
+
+extensions: []
+
+extra_rdoc_files: 
+- History.txt
+- Manifest.txt
+files: 
+- History.txt
+- LICENSE
+- Manifest.txt
+- README
+- Rakefile
+- lib/freshbooks.rb
+- lib/freshbooks/base.rb
+- lib/freshbooks/category.rb
+- lib/freshbooks/client.rb
+- lib/freshbooks/connection.rb
+- lib/freshbooks/estimate.rb
+- lib/freshbooks/expense.rb
+- lib/freshbooks/invoice.rb
+- lib/freshbooks/item.rb
+- lib/freshbooks/line.rb
+- lib/freshbooks/links.rb
+- lib/freshbooks/list_proxy.rb
+- lib/freshbooks/payment.rb
+- lib/freshbooks/project.rb
+- lib/freshbooks/recurring.rb
+- lib/freshbooks/response.rb
+- lib/freshbooks/schema/definition.rb
+- lib/freshbooks/schema/mixin.rb
+- lib/freshbooks/staff.rb
+- lib/freshbooks/task.rb
+- lib/freshbooks/time_entry.rb
+- lib/freshbooks/xml_serializer.rb
+- lib/freshbooks/xml_serializer/serializers.rb
+- script/console
+- script/destroy
+- script/generate
+- test/fixtures/freshbooks_credentials.sample.yml
+- test/fixtures/invoice_create_response.xml
+- test/fixtures/invoice_get_response.xml
+- test/fixtures/invoice_list_response.xml
+- test/fixtures/success_response.xml
+- test/mock_connection.rb
+- test/schema/test_definition.rb
+- test/schema/test_mixin.rb
+- test/test_base.rb
+- test/test_connection.rb
+- test/test_helper.rb
+- test/test_invoice.rb
+- test/test_list_proxy.rb
+- test/test_page.rb
+has_rdoc: true
+homepage: 
+licenses: []
+
+post_install_message: 
+rdoc_options: 
+- --main
+- README.txt
+require_paths: 
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement 
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      version: "0"
+  version: 
+required_rubygems_version: !ruby/object:Gem::Requirement 
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      version: "0"
+  version: 
+requirements: []
+
+rubyforge_project: freshbooks.rb
+rubygems_version: 1.3.5
+signing_key: 
+specification_version: 3
+summary: ""
+test_files: 
+- test/test_connection.rb
+- test/test_list_proxy.rb
+- test/test_page.rb
+- test/test_invoice.rb
+- test/schema/test_mixin.rb
+- test/schema/test_definition.rb
+- test/test_helper.rb
+- test/test_base.rb

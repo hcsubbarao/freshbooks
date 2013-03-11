@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'freshbooks'
-  s.version     = '0.0.0'
+  s.version     = '0.0.1'
   s.date        = '2013-03-08'
   s.summary     = "This gem is created for our project requirments from existing plugin"
   s.description = "This gem is created for our project requirments from existing plugin form "
